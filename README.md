@@ -1,5 +1,7 @@
 # GoCTA
 
+[![Build Status](https://travis-ci.org/sdimitro/GoCTA.svg?branch=master)](https://travis-ci.org/sdimitro/GoCTA)
+
 A Golang wrapper for the Chicago Transit Authority Train API.
 
 ### Motivation
