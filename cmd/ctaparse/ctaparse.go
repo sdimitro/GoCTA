@@ -15,7 +15,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	res, err := gocta.ParseCTAResponse(string(input[:]))
+	res, err := gocta.ParseCTAResponse(input)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "ctaparse: %v\n", err)
 		os.Exit(1)

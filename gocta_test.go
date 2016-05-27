@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-var sampleResponse = `
+var sampleResponse = []byte(`
 <ctatt>
 	<tmst>20160525 09:15:33</tmst>
 	<errCd>0</errCd><errNm/>
@@ -52,11 +52,11 @@ var sampleResponse = `
 		<heading>178</heading>
 	</eta>
 </ctatt>
-`
+`)
 
 func TestResponseParser(t *testing.T) {
 	var tests = []struct {
-		input  string
+		input  []byte
 		tmstmp string
 		predno int
 	}{
